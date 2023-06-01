@@ -1,0 +1,80 @@
+.wrapper {
+  display: flex;
+  padding: 12px;
+  gap: 16px;
+
+  width: 100%;
+  border-radius: 14px;
+
+  &__active {
+    background: rgba(97, 94, 240, 0.15);
+  }
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 100%;
+  .body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    .content {
+      font-size: 14px;
+      margin: 5px 0px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  .footer {
+  }
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  .online {
+    font-size: 14px;
+    opacity: 0.3;
+  }
+}
+
+.badge {
+  padding: 2px 8px;
+
+  border: 1px solid #cbd5e0;
+  border-radius: 12px;
+
+  color: #718096;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &--success {
+    border: none;
+    background: #c6f6d5;
+    color: #38a169;
+  }
+
+  &--danger {
+    border: none;
+    background: #feebc8;
+    color: #dd6b20;
+  }
+}

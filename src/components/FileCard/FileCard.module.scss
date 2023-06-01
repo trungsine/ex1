@@ -1,0 +1,68 @@
+@import "../../utils/variables.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 14px 0px;
+
+  width: 100%;
+
+  & > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    background: rgba($primary-color, 0.2);
+    border-radius: 50%;
+    border: none;
+
+    font-size: 30px;
+    color: $primary-color;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 12px;
+
+    &-PDF {
+      background: #fff5f5;
+      color: #f56565;
+    }
+    &-PNG {
+      background: #f0fff4;
+      color: #48bb78;
+    }
+    &-DOC {
+      background: #ebf8ff;
+      color: #4299e1;
+    }
+    &-XXL {
+      background: #faf5ff;
+      color: #9f7aea;
+    }
+  }
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    .properties {
+      display: flex;
+      gap: 10px;
+      opacity: 0.4;
+    }
+  }
+}
