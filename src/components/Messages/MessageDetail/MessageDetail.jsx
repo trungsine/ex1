@@ -28,16 +28,11 @@ const dataTeam = [
     },
     {
       id: 5,
-      fullName: "Florencio Dorrance",
-      content: "Market Development Manager",
-    },
-    {
-      id: 6,
       fullName: "Alfonzo Schuessler",
       content: "Proposal Writer",
     },
     {
-      id: 7,
+      id: 6,
       fullName: "Daryl Nehls",
       content: "Nursing Assistant",
     },
@@ -89,17 +84,17 @@ const MessageDetail = () => {
       <div className={styles.header}>
         <h3>Directory</h3>
         <button>
-          <CiMenuKebab />
+          <CiMenuKebab /> 
         </button>
       </div>
       <Divider />
       <Listcontainer title='Team Members' count={dataTeam.length}>
         {dataTeam.map((member) => (
-          <MessageCard key={member.id} {...member} />
+          <MessageCard key={member.id} {...member}  />
         ))}
       </Listcontainer>
       <Divider />
-      <Listcontainer title="Files" count="125">
+      <Listcontainer title="Files" count="300">
           {dataFile.map((file) => (
             <FileCard key={file.id} {...file} />
           ))}
